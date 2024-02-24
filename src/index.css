@@ -1,0 +1,149 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(30, 30, 30);
+}
+
+body {
+  height: 100vh;
+  margin: 0 10%;
+}
+
+.portfolio-container{
+  padding-bottom: 50px;
+}
+
+.portfolio-header h1{
+  text-align: center;
+  background-image: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: header-gradient-move 20s infinite alternate;
+  background-size: 200%;
+}
+
+
+@keyframes header-gradient-move {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+.portfolio-header h1 img{
+  border-radius: 40%;
+  transform: translate(0, 20px);
+  transition: transform 0.3s ease-in-out, scale 0.6s ease-in-out;
+  cursor: grabbing;
+}
+
+.portfolio-header h1 img:hover{
+  transform: translateY(10px);
+  scale: 1.4;
+}
+
+.portfolio-container .title h3{
+  background-color: rgba(250,50,50);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  width: fit-content;
+  padding: 5px 20px;
+}
+
+.portfolio-container .body {
+  background-color: rgb(40, 40, 40);
+  padding: 10px;
+}
+
+.education-and-training ol{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.education-and-training .education-title, .personal-info .personal-info-title{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.education-and-training .education-text, .personal-info .personal-info-text, u{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 2px;
+  text-decoration-color: rgb(220,0,250);
+  /* text-decoration-color: rgba(255,255,80); */
+}
+
+.skills ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.skills li{
+  /* background-color: rgb(10, 10, 10); */
+  border: 1px solid rgba(255,255,80);
+  margin-bottom: 10px;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 10px 2px 15px 2px;
+  transition: background-color 0.9s ease, box-shadow 0.7s ease, transform 0.4s ease;
+  list-style-type: none;
+  cursor: default;
+}
+
+.skills li:hover{
+  /* background-color: rgb(255,255,80,0.3); */
+  background-image: linear-gradient(to right,rgb(255,255,80,0.5),rgb(255,255,80,0.1));
+  box-shadow: 0 0 15px rgb(255,255,80,0.4);
+  transform: scale(1.04);
+}
+
+.skills ul a{
+  cursor: pointer;
+  color:white;
+  text-decoration: none;
+}
+
+.msg-to-click{
+  display: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 1.1px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.projects-title{
+  background-color: rgb(100,100,150, 0.5);
+  width: fit-content;
+  padding: 0 3px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.projects-text{
+  background-color: rgb(100, 100, 150, 0.1);
+  width: fit-content;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(40, 40, 40, 0.8); /* Set the color of the scrollbar thumb */
+  border-radius: 1px; /* Set the border radius of the scrollbar thumb */
+}
