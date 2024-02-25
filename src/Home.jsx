@@ -31,7 +31,7 @@ function Home(){
         <>  
             <div className="portfolio-header">
                 <h1>
-                <img src="/memoji.png" height="70px" alt="" />
+                <img src="src/assets/memoji.png" height="70px" alt="" />
                     Portfolio: Saurabh Mhatre
                 </h1>
             </div>
