@@ -8,7 +8,6 @@ function Home(){
     
 
     const hackerTextEffect = () =>{
-        console.log(document.querySelectorAll('.title > h3'))
         document.querySelectorAll('.title > h3').forEach((titleRef)=>{
             const originalText = titleRef.textContent
             let iterations = 0
